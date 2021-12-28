@@ -10,7 +10,7 @@ const SearchView = () => {
 	const [count, setCount] = React.useState(0);
 	const [isLoading, setIsLoading] = React.useState(false);
 
-	const baseUrl = 'http://127.0.0.1:7777'
+	const apiUrl = 'https://winshop-api.herokuapp.com'
 
 	const handleInputChange = (e) => {
 		console.log(e.target.value);
