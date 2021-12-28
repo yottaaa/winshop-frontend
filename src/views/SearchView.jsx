@@ -22,7 +22,7 @@ const SearchView = () => {
 		setProducts([]);
 		console.log(`Searching "${searchKey}"...`);
 		setIsLoading(true);
-		axios.get(`${baseUrl}/search_product/${searchKey}`)
+		axios.get(`${apiUrl}/search_product/${searchKey}`)
 		  .then(function (response) {
 		    // handle success
 		    setProducts(response.data['products']);
